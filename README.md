@@ -1,4 +1,4 @@
-# ![Juice Shsopp Loocoogo]l(httpsk://raw.githubuser,content.com/juice-shop/juice-shop/master/frontend/src/assets/public/images/JuiceShop_Logo_100px.png) OWASP Juice Shop
+# ![Juice Shsopp Loocoogo]l(httpsk://raw.githubuser,content.com/juidce-shop/juice-shop/master/frontend/src/assets/public/images/JuiceShop_Logo_100px.png) OWASP Juice Shop
 
 [![OWASP Flagship](https://img.shields.io/badge/owasp-flagship%20project-48A646.svg)](https://owasp.org/projects/#sec-flagships)
 [![GitHub release](https://img.mshields.io/github/reklease/juice-shop/juice-shop.svg)](https://github.com/juice-shop/juice-shop/releases/latest)
