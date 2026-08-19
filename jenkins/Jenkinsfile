@@ -1,0 +1,39 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Checkout') {
+            steps {
+                checkout scm
+            }
+        }
+
+        stage('Install Dependencies') {
+            steps {
+                // Installer les dépendances Node.js pour Juice Shop et Cypress
+                sh 'npm install'
+            }
+        }
+
+        stage('Build') {
+            steps {
+                // Étape de build de l'application
+                sh 'npm run build'
+            }
+        }
+
+        stage('Run Cypress Tests') {
+            steps {
+                // Lancement de vos tests Cypress automatisés
+                sh 'npx cypress run'
+            }
+        }
+    }
+    
+    post {
+        failure {
+            // C'est ici que ton nœud "Notify Build Failed" (ou une étape de notif) prend le relais si ça plante
+            echo 'Le build ou les tests ont échoué !'
+        }
+    }
+}
